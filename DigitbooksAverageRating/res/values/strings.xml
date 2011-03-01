@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="average_rate">Cette note représente la note moyenne calculée grâce au fournisseur de contenu</string>
+    <string name="provider_empty">Il n\y a aucune note dans le fournisseur de contenu</string>
+    <string name="permission_problem">L\'application \"Digitbooks Exemples\" a été installé après l\'application qui calcul la moyenne. Vous devez désinstaller l\'application de calcul de moyenne et la réinstaller</string>
+    <string name="app_name">Digitbooks</string>
+    <string name="get_rates">Lancer la récupération des notes</string>
+    <string name="digitbooks_examples_not_found">L\'application Digitbooks Exemples n\'est pas installé</string>
+</resources>

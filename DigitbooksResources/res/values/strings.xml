@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+<string name="ressource_sentence">Layout depuis un projet de ressources</string>
+<string name="start_ressource_activity">Lancer une activité des ressources</string>
+<string name="ressource_activity">Cette activité est définie dans un projet de ressources</string>
+</resources>

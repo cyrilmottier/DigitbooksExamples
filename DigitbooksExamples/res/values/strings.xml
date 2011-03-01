@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright (C) 2010  Cyril Mottier & Ludovic Perrier
+**              (http://www.digitbooks.fr/)
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="version">Cette exemple n\'est pas disponible sur votre terminal, merci d\'utiliser une version d\'android supèrieure ou égale à 2.3</string>
+	
+    <string name="app_name">Digit Books</string>
+	<string name="welcome">Bienvenue</string>
+	<string name="digitbooks_description">Cette application regroupe l\'ensemble des exemples de l\'ouvrage "Développez pour Android". L\'intégralité du code source de cet application est disponible sur GitHub et le livre peut être acheté à l\'aide du lien mentionné dans l\'application</string>
+
+	<string name="hello_activity">Chapitre 02/01 - Activité Bonjour</string>
+    <string name="hello">Bonjour tout le monde !</string>
+
+    <string name="simple_activity">Chapitre 02/02 - Activité Simple</string>
+
+    <string name="simple_service">Chapitre 02/03 - Service Simple</string>
+
+    <string name="simple_receiver">Chapitre 02/04 - Récepteur Simple</string>
+
+    <string name="simple_provider">Chapitre 02/05 - Fournisseur Simple</string>
+    
+    <string name="intents">Chapitre 02/06 - Les intentions</string>
+    <string name="intent_1">1 - Lancer la calculette</string>
+    <string name="intent_2">2 - Activité interne 1</string>
+    <string name="intent_3">3 - Activité interne 2</string>
+    <string name="intent_4">4 - Pression de la touche Appeler</string>
+    <string name="intent_5">5 - Initier un appel avec un numéro</string>
+    <string name="intent_6">6 - Effacer l\'historique des activités</string>
+    <string name="intent_7">7 - Envoyer un SMS</string>
+    <string name="intent_8">8 - Recherche \"android\" sur l\'Android Market</string>
+    <string name="androidmarket_not_found">L\'Android market n\'est pas installé sur ce périphérique</string>
+    <string name="intent_9">9 - Utiliser une intention personnalisée</string>
+    <string name="intented_activity">Cette activité est lancée grâce à une intention personnalisée</string>
+    <string name="custom_intent">Intention personnalisée</string>
+    
+
+	<string name="stack_model">Chapitre 03/00 - Représentation en pile</string>
+    <string name="simple_layout">Chapitre 03/01 - Gabarit XML et Java</string>
+       
+    <string name="include_xml">Chapitre 03/02 - Include</string>
+    <string name="uses_include">Cet exemple utilise le tag &lt;include /&gt; pour ajouter le menu</string>
+        
+    <string name="fill_and_wrap">Chapitre 03/03 - Fill et wrap</string>
+    <string name="hello_android">Bonjour Android !</string>
+    
+    <string name="listener">Chapitre 03/04 - Listener</string>
+    
+    <string name="rate_android">Chapitre 03/05 - Voter pour Android !</string>
+    <string name="leave_your_comment">Vous aimez Android ? Prouvez-le en laissant ici votre plus beau commentaire !</string>
+    <string name="thank_you">Vous venez de noter Android avec une note de %1$f et le commentaire \"%1$s\". Merci pour votre participation !</string>
+
+	<string name="string_format">Chapitre 05/01 - Formatage de chaîne</string>
+    <string name="sentence">En France le prix s’écrit : </string>
+	<string name="price">%.1f€</string>
+	
+	<string name="menu_java">Chapitre 05/02 - Menu en Java</string>
+    <string name="menu_xml">Chapitre 05/03 - Menu en XML</string>
+    
+    <string name="catch_me">Chapitre 05/04 - Attrape-Moi</string>
+    
+    <string name="hi">Chapitre 05/05 - Animation Bonjour</string>
+    
+    <string name="color_selector">Chapitre 05/06 - Etat et couleur</string>
+
+    
+    
+    
+    
+	
+    <string name="textview_style">Chapitre 05/07 - Style d\'un texte</string>
+    <string name="style_medium">Texte écrit avec le style moyen</string>
+	<string name="my_style_medium">Texte écrit avec le style moyen personnalisé</string>
+	
+    <string name="theme">Chapitre 05/08 - Theme personnalisé</string>
+    
+    <string name="ressources_android">Chapitre 05/09 - Ressources Android</string>
+    <!-- Days of week -->
+    <string-array name="days_of_week">
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+        <item>Dimanche</item>
+    </string-array>
+    
+    <string name="assets">Chapitre 05/10 - Ressources non structurées</string>
+    <string name="apache">Apache License, Version 2.0</string>
+    
+    <string name="ressources_library">Chapitre 05/11 - Bibliothèque de ressources</string>
+
+    
+    <!-- =============================== -->
+    <!--  Scroll view  -->
+    <!-- =============================== -->
+
+    <string name="scroll_view">Chapitre 06/01 - Scroll View</string>
+
+    <string name="dumb_list">Chapitre 06/02 - Liste stupide</string>
+    
+    <string name="correct_list">Chapitre 06/03 - Liste correcte</string>
+    
+    <string name="perfect_list">Chapitre 06/04 - Liste parfaite</string>
+    
+    <string name="ultimate_list">Chapitre 06/05 - Liste ultime</string>
+    
+    <string name="item_type">Chapitre 06/06 - Types d\'items</string>
+    
+    <string name="asynchronous_task">Chapitre 06/07 - Tâche asynchrone</string>
+    
+    <string name="asynchronous_list">Chapitre 06/08 - Liste asynchrone</string>
+    
+
+
+    <string name="jezzball">Chapitre 07/01 - Jezzball</string>
+    <plurals name="bottom_text">
+    	<item quantity="one">Il y a une balle</item>
+    	<item quantity="other">Il y a %d balles</item>
+    </plurals>
+ 
+    <string name="drawable_listing">Chapitre 07/02 - Drawable listing</string>
+    
+    
+    
+        <!-- =============================== -->
+    <!--  Rate Android ! -->
+    <!-- =============================== -->
+    <string name="download_file">Chapitre 08/01 - Télécharger un fichier</string>
+    <string name="download_title">Téléchargement Digitbooks</string>
+    <string name="rate_android_2">Chapitre 08/02 - Noter Digit Books !</string>
+    <string name="rate_android_3">Chapitre 08/03 - Noter Digit Books ! Une fois.</string>
+    <string name="rate_android_4">Chapitre 08/04 - Noter Digit Books ! Hors ligne.</string>
+    <string name="loading">Chargement</string>
+    <string name="no_network">Aucune connexion internet active, merci de vérifier vos paramètres</string>
+    <string name="empty_list">Aucune note</string>
+    <string name="error_list">Une erreur serveur c\'est produite, merci de réessayer plus tard</string>
+    <string name="leave_your_digitbooks_comment">Vous aimez ce livre et ces exemples? Dites-le en laissant ici votre plus beau commentaire !</string>
+    <string name="dialog_null_title">C\'est si nulle que ça !</string>
+    <string name="dialog_null_comment">Vous allez soumettre une note de 0, êtes vous certain de vouloir envoyer cette note ?</string>
+    <string name="send_comment">Envoi de votre note</string>
+    <string name="see_rate">Voir votre vote</string>
+    <string name="date_format">dd/MM/yy à k:mm</string>
+    <string name="rate_sent">Vous avez déjà voté</string>
+    <string name="offline_rates">Vous n\'avez pas de connexion internet, les notes affichées sont les dernières reçues</string>
+    <string name="offline_menu">Vous n\'avez pas de connexion internet, vous ne pouvez pas noter</string>
+    <string name="permlab_readRating">Notes Digitbooks</string>
+    <string name="permdesc_readRating">Accès aux notes des utilisateur de l\'exemple Digitbooks</string>
+    <string name="file_complete">Le fichier est disponible à cette uri : %s</string>
+    
+
+
+
+    <string name="android_website">http://www.android.com</string>
+    
+    <string name="intent_browser">Chapitre 09/01 - Navigateur via Intent</string>
+
+    <string name="simple_webview">Chapitre 09/02 - WebView simple</string>
+    
+    <string name="web_chrome_client">Chapitre 09/03 - WebChromeClient</string>
+   	<string name="default_title">Nouvelle page</string>
+	<string name="alert_template">Alerte \"%1$s\" reçue provenant de l\'adresse %1$s</string>
+	<string name="progress_template">%d %%</string>
+    
+    <string name="javascript_interface">Chapitre 09/04 - JavascriptInterface</string>
+    
+    <!-- =============================== -->
+    <!--  Chapitre 10 ! -->
+    <!-- =============================== -->
+    
+    <string name="gl_empty_name">Chapitre 10/01 - Vue OpenGl vide</string>
+    <string name="gl_set_name">Chapitre 10/02 - Vue OpenGl paramétrée</string>
+    <string name="gl_cube_name">Chapitre 10/03 - Cube OpenGl</string>
+    <string name="gl_interaction_name">Chapitre 10/04 - Interaction avec OpenGl</string>
+    
+    <string name="pi_name">Chapitre 10/05 - Calcul de Pi</string>
+    <string name="radio_group_1_java">Calcul en Java</string>
+    <string name="radio_group_1_ndk">Calcul en C (Ndk)</string>
+    <string name="radio_group_1_selection">Choississez le mode de calcul de Pi et le nombre de decimales entre 1 et 15 000</string>
+    <string name="launch">Lancer le calcul</string>
+    <string name="decimal_limit">Nombre de decimales</string>
+    
+    <string name="bad_limit">Entrer une valeur entre 1 et 15 000</string>
+    <string name="pi_error">une erreur c\'est produite pendant le calcul</string>
+    
+    <!-- =============================== -->
+    <!--  Chapitre 11 ! -->
+    <!-- =============================== --> 
+    
+    <string name="sensor">Chapitre 11/01 - Capteur d\'orientation</string>
+    <string name="location">Chapitre 11/02 - LocationManager</string>
+    <string name="camera">Chapitre 11/03 - Caméras</string>
+    
+    <string name="no_gps_title">Aucun GPS activé</string>
+    <string name="no_gps_content">Souhaitez vous ouvrir les paramètres de localisation et activer le GPS pour permettre à cette démonstration de fonctionner correctement ?</string>
+    <string name="distance_hud_text_format"><b>Lat</b>:%1$.4f <b>Long</b>:%2$.4f <b>Dist</b>: %3$.2fm</string>
+    
+</resources>
+

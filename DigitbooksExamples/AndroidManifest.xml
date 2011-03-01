@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright (C) 2010  Cyril Mottier & Ludovic Perrier
+**              (http://www.digitbooks.fr/)
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<!-- Declare the contents of this Android application.  The namespace
+     attribute brings in the Android platform namespace, and the package
+     supplies a unique name for the application.  When writing your
+     own application, the package name must be changed from "com.example.*"
+     to come from a domain that you own or have control over. -->
+<manifest 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.digitbooks.android.examples"
+    android:versionName="1.0"
+    android:versionCode="1">
+    
+    <permission
+    	android:name="fr.digitbooks.android.permission.READ_DIGITBOOKS_RATING"
+        android:protectionLevel="normal"
+        android:label="@string/permlab_readRating"
+        android:description="@string/permdesc_readRating" />
+
+    <application
+    	android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:backupAgent="RateDigitBooksBackupAgent"
+        android:restoreAnyVersion="true"
+        android:debuggable="true">
+
+        <activity android:name=".DigitbooksExamples">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".LicenseActivity" />
+
+        <!-- ************************************* -->
+        <!--      CHAPITRE 02      -->
+        <!-- ************************************* -->
+        
+        <activity android:name=".chapitre02.HelloActivity" android:label="@string/hello_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre02.SimpleActivity" android:label="@string/simple_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre02.SimpleServiceActivity" android:label="@string/simple_service">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+	
+	    <service android:name=".chapitre02.SimpleService" android:process=":share"></service>
+	    
+	    <activity android:name=".chapitre02.ClockActivity" android:label="@string/simple_receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+		<receiver android:name=".chapitre02.WelcomeReceiver">
+	            <intent-filter>
+	                <action android:name="android.intent.action.BOOT_COMPLETED" />
+	            </intent-filter>
+	    </receiver>
+	    
+	    <activity android:name=".chapitre02.SimpleProvider" android:label="@string/simple_provider">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre02.Intents" android:label="@string/intents">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre02.AnActivity" android:label="@string/custom_intent">
+            <intent-filter>
+                <action android:name="fr.digitbooks.android.examples.ACTION_AN_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- ************************************* -->
+        <!--      CHAPITRE 03      -->
+        <!-- ************************************* -->
+        
+        <activity
+        	android:name=".chapitre03.StackModelActivity"
+        	android:label="@string/stack_model"
+        	android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre03.SimpleLayoutActivity" android:label="@string/simple_layout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre03.IncludeActivity" android:label="@string/include_xml">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre03.FillAndWrapActivity" android:label="@string/fill_and_wrap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre03.ListenerActivity" android:label="@string/listener">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre03.RateAndroidActivity" android:label="@string/rate_android">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        
+        <!-- ************************************* -->
+        <!--      CHAPITRE 05      -->
+        <!-- ************************************* -->
+        
+        <activity android:name=".chapitre05.CatchMeActivity" android:label="@string/catch_me">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.HiActivity" android:label="@string/hi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.SelectorTestActivity" android:label="@string/color_selector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.MenuJavaActivity" android:label="@string/menu_java">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.MenuXmlActivity" android:label="@string/menu_xml">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.StringFormatActivity" android:label="@string/string_format">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.StyleActivity" android:label="@string/textview_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.ThemeActivity" android:label="@string/theme" android:theme="@style/MyThemeLight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.RessourcesAndroidActivity" android:label="@string/ressources_android">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.AssetsActivity" android:label="@string/assets">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre05.RessourcesLibraryActivity" android:label="@string/ressources_library">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="fr.digitbooks.android.resources.ResourcesActivity" />
+        
+        <!-- ************************************* -->
+        <!--      CHAPITRE 06      -->
+        <!-- ************************************* -->
+        
+        <activity android:name=".chapitre06.ScrollViewActivity" android:label="@string/scroll_view">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre06.DumbListActivity" android:label="@string/dumb_list">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre06.CorrectListActivity" android:label="@string/correct_list">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre06.PerfectListActivity" android:label="@string/perfect_list">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre06.UltimateListActivity" android:label="@string/ultimate_list">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre06.ItemTypeActivity" android:label="@string/item_type">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".chapitre06.AsynchronousTaskActivity" android:label="@string/asynchronous_task">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre06.AsynchronousListActivity" android:label="@string/asynchronous_list">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+		<!-- ************************************* -->
+        <!--      CHAPITRE 07      -->
+        <!-- ************************************* -->
+        
+        <activity android:name=".chapitre07.JezzballActivity" android:label="@string/jezzball">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre07.DrawableListActivity" android:label="@string/drawable_listing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapitre07.DisplayDrawableActivity" />
+        
+        
+        <!-- ************************************* -->
+        <!--      CHAPITRE 08      -->
+        <!-- ************************************* -->
+        
+        <activity android:name=".chapitre08.DownloadFileActivity" android:label="@string/download_file">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre08.RateListActivity" android:label="@string/rate_android_2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre08.RateDigitbooksActivity"/>
+        
+        <activity android:name=".chapitre08.RateOnceListActivity" android:label="@string/rate_android_3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre08.RateListActivityOffline" android:label="@string/rate_android_4">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.digitbooks.rate" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name=".chapitre08.RequestDigitBooksRatingService" />
+        
+        <provider android:name=".chapitre08.DigitbooksRatingProvider" android:authorities="fr.digitbooks.android.examples"
+                android:syncable="false" android:multiprocess="false"
+                android:readPermission="fr.digitbooks.android.permission.READ_DIGITBOOKS_RATING"/>
+        
+        <!-- ************************************* -->
+        <!--      CHAPITRE 09      -->
+        <!-- ************************************* -->
+        
+        <activity android:name=".chapitre09.IntentBrowserActivity" android:label="@string/intent_browser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre09.WebViewButtonActivity" android:label="@string/simple_webview">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapitre09.WebViewActivity" />
+        
+        <activity android:name=".chapitre09.WebChromeClientActivity" android:label="@string/web_chrome_client"
+        	android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre09.JavascriptInterfaceActivity" android:label="@string/javascript_interface">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <!-- ************************************* -->
+        <!--      CHAPITRE 10      -->
+        <!-- ************************************* -->
+        
+        <activity android:name=".chapitre10.GLEmptyActivity" android:label="@string/gl_empty_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre10.GLSetActivity" android:label="@string/gl_set_name"
+                  android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre10.GLCubeActivity" android:label="@string/gl_cube_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre10.GLInteractionActivity" android:label="@string/gl_interaction_name" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre10.PiCalculatorActivity" android:label="@string/pi_name" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".chapitre10.PiResultActivity" android:screenOrientation="landscape"/>
+        
+        <!-- ************************************* -->
+        <!--      CHAPITRE 11      -->
+        <!-- ************************************* -->
+        
+        <activity
+        	android:name=".chapitre11.SensorActivity"
+        	android:label="@string/sensor"
+        	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+        	android:name=".chapitre11.LocationActivity"
+        	android:label="@string/location">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+        	android:name=".chapitre11.CameraActivity"
+        	android:label="@string/camera"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        	android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="digitbooks.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+    	android:name="android.hardware.camera.autofocus"
+    	android:required="false" />
+    
+	<uses-sdk android:minSdkVersion="4" /> 
+
+</manifest>

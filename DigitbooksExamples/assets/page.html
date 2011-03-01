@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Sample904</title>
+        <script type="text/javascript">
+        var COUPLE = 0
+        var PARENTS = 1;
+        var state = COUPLE;
+        function nextStep() {
+            if (state == COUPLE) {
+                alert("C'est ça l'amour :)");
+                document.getElementById("droids").src="couple_of_parents.png";
+                state = PARENTS;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <img id="droids" src="couple_of_droids.png" />
+        <!-- On demande ici, au clic du lien, de lancer la méthode onNextStepClicked() (exemple Java à partir de Javascript). -->
+        <a onClick="window.sample904.onNextStepClicked()" href="#">La prochaine étape c'est ...</a>
+    </body>
+</html>

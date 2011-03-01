@@ -1,0 +1,13 @@
+#*Développez pour Android* par Cyril Mottier et Ludovic Perrier
+
+##Présentation
+
+DigitbooksExamples est un projet regroupant un large panel d'exemples de code source dédié à la plateforme Android. Ces portions de code sont utilisées tout au long de l'ouvrage *Développez pour Android* rédigé par Cyril Mottier et Ludovic Perrier.
+Une description plus complète de ce livre ainsi que diverses possibilités d'achats sont disponibles sur le site de [Digit Books][digitbooks_android].
+
+##Crédits
+
+Copyright © Digitbooks, 2011
+Cyril Mottier <cyril@cyrilmottier.com> & Ludovic Perrier
+
+[digitbooks_android]: http://www.digitbooks.fr/catalogue/9782815002028.html
