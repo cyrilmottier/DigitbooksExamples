@@ -110,7 +110,9 @@ public class SimpleProvider extends Activity {
                         imageView.setImageBitmap(bmp);
                     }
                 } catch (FileNotFoundException e) {
-                    e.printStackTrace();
+                    textView.setVisibility(View.VISIBLE);
+                } catch (NullPointerException e) {
+                    textView.setVisibility(View.VISIBLE);
                 }
             } else {
                 textView.setVisibility(View.VISIBLE);

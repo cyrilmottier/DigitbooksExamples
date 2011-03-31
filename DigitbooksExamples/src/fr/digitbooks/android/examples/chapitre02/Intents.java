@@ -50,9 +50,13 @@ public class Intents extends Activity implements OnClickListener {
 
         switch (v.getId()) {
             case R.id.button1:
-                final Intent intent1 = new Intent();
-                intent1.setComponent(new ComponentName("com.android.calculator2", "com.android.calculator2.Calculator"));
-                startActivity(intent1);
+                try {
+                    final Intent intent1 = new Intent();
+                    intent1.setComponent(new ComponentName("com.android.calculator2", "com.android.calculator2.Calculator"));
+                    startActivity(intent1);
+                } catch (ActivityNotFoundException ex) {
+                    Toast.makeText(this, getString(R.string.calculator_not_found), Toast.LENGTH_SHORT).show();
+                }
                 break;
 
             case R.id.button2:

@@ -45,6 +45,7 @@
     <string name="intent_7">7 - Envoyer un SMS</string>
     <string name="intent_8">8 - Recherche \"android\" sur l\'Android Market</string>
     <string name="androidmarket_not_found">L\'Android market n\'est pas installé sur ce périphérique</string>
+    <string name="calculator_not_found">La calculatrice n\'est pas installé sur ce périphérique</string>
     <string name="intent_9">9 - Utiliser une intention personnalisée</string>
     <string name="intented_activity">Cette activité est lancée grâce à une intention personnalisée</string>
     <string name="custom_intent">Intention personnalisée</string>

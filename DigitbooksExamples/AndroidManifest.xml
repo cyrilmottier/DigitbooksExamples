@@ -25,8 +25,8 @@
 <manifest 
 	xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.digitbooks.android.examples"
-    android:versionName="1.0"
-    android:versionCode="1">
+    android:versionName="1.0.1"
+    android:versionCode="3">
     
     <permission
     	android:name="fr.digitbooks.android.permission.READ_DIGITBOOKS_RATING"
@@ -38,8 +38,7 @@
     	android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         android:backupAgent="RateDigitBooksBackupAgent"
-        android:restoreAnyVersion="true"
-        android:debuggable="true">
+        android:restoreAnyVersion="true">
 
         <activity android:name=".DigitbooksExamples">
             <intent-filter>
